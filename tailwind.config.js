@@ -9,6 +9,11 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
+  purge: {
+    // This help to reduce the size of the tailwind css chunk for production
+    enabled: true,
+    content: ["./src/**/*.js", "./src/**/**/*.js"],
+  },
   theme: {
     colors: {
       white: "#ffffff",
